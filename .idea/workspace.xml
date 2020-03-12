@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62ca48d-7fbc-43c7-906d-298f60286757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringDIConfigFramework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/repos/Repository1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/repos/Repository2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/implementations/Service1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/implementations/Service2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spring-boot-configuration-bean-injection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +52,7 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.project.Application" />
-      <module name="SpringBootConfigurationBeanInjection" />
+      <module name="spring-boot-configuration-bean-injection" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.project.*" />
@@ -100,10 +83,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="178" key="#Application" timestamp="1584043940040">
+    <state x="677" y="178" key="#Application" timestamp="1584044414674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="178" key="#Application/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043940040" />
+    <state x="677" y="178" key="#Application/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584044414674" />
     <state x="552" y="178" key="#Project_Structure" timestamp="1584037822060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
