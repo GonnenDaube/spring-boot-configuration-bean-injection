@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62ca48d-7fbc-43c7-906d-298f60286757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/spring-boot-configuration-bean-injection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -99,26 +103,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584042699321" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584040228201">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584096628936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584040228201" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584043981210">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096628936" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584096671232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043981210" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584043981210">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671232" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584096671231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043981210" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584043981210">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671231" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584096671231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043981210" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584043981210">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671231" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584096671232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043981210" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671232" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584043828417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

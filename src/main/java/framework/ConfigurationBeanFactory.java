@@ -29,7 +29,7 @@ public abstract class ConfigurationBeanFactory<T> {
     /**
      * simple usage in subclass:
      *  @Override
-     *  @Bean(name="T")
+     *  @Bean(name=T.NAME)
      *  public T get() throws Exception {
      *      return getBean(T.class);
      *  }

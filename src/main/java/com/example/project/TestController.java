@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @Autowired
-    @Qualifier("IService")
+    @Qualifier(IService.NAME)
     private IService service;
 
     @Autowired
-    @Qualifier("IRepository")
+    @Qualifier(IRepository.NAME)
     private IRepository repository;
 
     @GetMapping("/")

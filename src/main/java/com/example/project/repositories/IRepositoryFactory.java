@@ -9,7 +9,7 @@ import javax.naming.ConfigurationException;
 @Configuration
 public class IRepositoryFactory extends ConfigurationBeanFactory<IRepository> {
     @Override
-    @Bean(name="IRepository")
+    @Bean(IRepository.NAME)
     public IRepository get() throws ConfigurationException {
         return getBean(IRepository.class);
     }
