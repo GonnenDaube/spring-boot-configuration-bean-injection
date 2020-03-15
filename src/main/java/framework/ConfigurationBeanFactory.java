@@ -9,9 +9,6 @@ import java.util.List;
 
 @Configuration
 public abstract class ConfigurationBeanFactory<T> {
-
-    private static final String ANNOTATIONS = "annotations";
-
     @Autowired
     private List<T> beans;
 

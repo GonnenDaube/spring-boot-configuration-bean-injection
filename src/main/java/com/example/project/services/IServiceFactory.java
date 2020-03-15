@@ -9,7 +9,7 @@ import javax.naming.ConfigurationException;
 @Configuration
 public class IServiceFactory extends ConfigurationBeanFactory<IService> {
     @Override
-    @Bean(name=IService.NAME)
+    @Bean(name = IService.NAME)
     public IService get() throws ConfigurationException {
         return getBean(IService.class);
     }

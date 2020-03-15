@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c62ca48d-7fbc-43c7-906d-298f60286757" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" afterDir="false" />
     </list>
@@ -47,6 +43,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -95,6 +92,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584037822060" />
+    <state x="824" y="389" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584097366998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="824" y="389" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584097366998" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584037927591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,5 +140,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584043828417" />
+    <state x="609" y="178" key="SettingsEditor" timestamp="1584097503014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="609" y="178" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584097503014" />
   </component>
 </project>
