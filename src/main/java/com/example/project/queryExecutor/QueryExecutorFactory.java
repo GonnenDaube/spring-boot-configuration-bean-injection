@@ -20,7 +20,7 @@ public class QueryExecutorFactory extends BeanFactory<IQueryExecutor, QueryExecu
 
     @Override
     @Bean(CONF)
-    public IQueryExecutor get() throws ConfigurationException {
+    public IQueryExecutor get() {
         return super.get();
     }
 

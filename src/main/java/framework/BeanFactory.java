@@ -28,7 +28,7 @@ public abstract class BeanFactory<T, E extends Enum<E>> {
         this.eType = eType;
     }
 
-    public T get() throws ConfigurationException {
+    public T get() {
         String config = environment.getProperty(type.getName());
 
          return beans.stream()
