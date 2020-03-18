@@ -4,9 +4,10 @@ import com.example.project.queryExecutor.IQueryExecutor;
 import com.example.project.queryExecutor.QueryExecutorFactory;
 import com.example.project.queryExecutor.QueryExecutorType;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.PostConstruct;
 import java.util.Map;
 
 @RestController
@@ -14,12 +15,16 @@ import java.util.Map;
 public class MainController {
 
     @Autowired
-    @Qualifier(QueryExecutorFactory.CONF)
-    private IQueryExecutor queryExecutor;
+    private ApplicationContext context;
 
-    @Autowired
-    @Qualifier(QueryExecutorFactory.MAP)
+    private IQueryExecutor queryExecutor;
     private Map<QueryExecutorType, IQueryExecutor> queryExecutorMap;
+
+    @PostConstruct
+    public void init() {
+        this.queryExecutor = (IQueryExecutor)context.getBean(QueryExecutorFactory.CONF);
+        this.queryExecutorMap = (Map<QueryExecutorType, IQueryExecutor>)context.getBean(QueryExecutorFactory.MAP);
+    }
 
     @GetMapping("/conf")
     public String getConf() {

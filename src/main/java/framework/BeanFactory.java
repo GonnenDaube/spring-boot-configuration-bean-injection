@@ -4,18 +4,28 @@ import framework.exceptions.BeanConfigurationException;
 import framework.exceptions.EnumNotFoundException;
 import framework.exceptions.EnumQualifierNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-import javax.naming.ConfigurationException;
+import javax.annotation.PostConstruct;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Configuration
 public abstract class BeanFactory<T, E extends Enum<E>> {
     private Class<T> type;
     private Class<E> eType;
+
+    public static final String CONF = UUID.randomUUID().toString();
+    public static final String IMPLS = UUID.randomUUID().toString();
+    public static final String MAP = UUID.randomUUID().toString();
+
+    @Autowired
+    private ApplicationContext context;
 
     @Autowired
     private List<T> beans;
@@ -28,7 +38,19 @@ public abstract class BeanFactory<T, E extends Enum<E>> {
         this.eType = eType;
     }
 
-    public T get() throws ConfigurationException {
+    @PostConstruct
+    public void init() {
+        T configurationBean = getConfigurationBean();
+        List<T> implementations = getAll();
+        Map<E, T> map = getMap();
+
+        AutowireCapableBeanFactory factory = context.getAutowireCapableBeanFactory();
+        factory.initializeBean(configurationBean, CONF);
+        factory.initializeBean(implementations, IMPLS);
+        factory.initializeBean(map, MAP);
+    }
+
+    private T getConfigurationBean() {
         String config = environment.getProperty(type.getName());
 
          return beans.stream()
@@ -38,11 +60,11 @@ public abstract class BeanFactory<T, E extends Enum<E>> {
                 .orElseThrow(() -> new BeanConfigurationException(type, config));
     }
 
-    public List<T> getAll() {
+    private List<T> getAll() {
         return this.beans;
     }
 
-    public Map<E, T> getMap() {
+    private Map<E, T> getMap() {
         EnumMap<E, T> map = new EnumMap<E, T>(eType);
         this.beans.forEach(bean -> map.put(getEnum(bean), bean));
 
