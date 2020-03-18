@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62ca48d-7fbc-43c7-906d-298f60286757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/EnumQualifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/exceptions/BeanConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/exceptions/EnumNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/exceptions/EnumQualifierNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framework/exceptions/ExceptionMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ElasticQueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ElasticQueryExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/HiveQueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/HiveQueryExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ImpalaQueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ImpalaQueryExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/SqlServerQueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/SqlServerQueryExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/BeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,22 +117,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096628936" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584548295502">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584548531272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548295502" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584548295502">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548531272" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584548531272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548295502" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584548295502">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548531272" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584548531271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548295502" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584548295502">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548531271" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584548531272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548295502" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584548531272" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584546735346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

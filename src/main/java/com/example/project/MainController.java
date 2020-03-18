@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/")
@@ -28,10 +26,10 @@ public class MainController {
         return queryExecutor.execute("query");
     }
 
-    @GetMapping("/dyn")
-    public String getDyn() {
+    @GetMapping("/dyn/{type}")
+    public String getDyn(@PathVariable String type) {
         try {
-            return queryExecutorMap.get(QueryExecutorType.ELASTIC).execute("query");
+            return queryExecutorMap.get(QueryExecutorType.valueOf(type)).execute("query");
         } catch (NullPointerException e) {
             return queryExecutor.execute("query");
         }
