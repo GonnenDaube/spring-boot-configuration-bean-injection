@@ -1,0 +1,10 @@
+<templateSet group="Spring">
+  <template name="beanfactory" value="@Configuration&#10;public class $factory$ extends BeanFactory&lt;$interface$, $enum$&gt; {&#10;    public static final String CONF = &quot;$interface$Conf&quot;;&#10;    public static final String IMPLS = &quot;$interface$Impls&quot;;&#10;    public static final String MAP = &quot;$interface$Map&quot;;&#10;&#10;    public $factory$() {&#10;        super($interface$.class, $enum$.class);&#10;    }&#10;&#10;    @Override&#10;    @Bean(CONF)&#10;    public $interface$ get() {&#10;        return super.get();&#10;    }&#10;&#10;    @Override&#10;    @Bean(IMPLS)&#10;    public List&lt;$interface$&gt; getAll() {&#10;        return super.getAll();&#10;    }&#10;&#10;    @Override&#10;    @Bean(MAP)&#10;    public Map&lt;$enum$, $interface$&gt; getMap() {&#10;        return super.getMap();&#10;    }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="factory" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="interface" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="enum" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
