@@ -1,6 +1,6 @@
 package com.example.project.queryExecutor;
 
-import framework.ConfigurationBeanFactory;
+import framework.BeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Configuration
-public class QueryExecutorFactory extends ConfigurationBeanFactory<IQueryExecutor, QueryExecutorType> {
+public class QueryExecutorFactory extends BeanFactory<IQueryExecutor, QueryExecutorType> {
     public static final String CONF = "QueryExecutorConf";
     public static final String IMPLS = "QueryExecutorImpls";
     public static final String MAP = "QueryExecutorMap";

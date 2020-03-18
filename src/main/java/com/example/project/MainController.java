@@ -31,7 +31,7 @@ public class MainController {
     @GetMapping("/dyn")
     public String getDyn() {
         try {
-            return queryExecutorMap.get(QueryExecutorType.COM_EXAMPLE_PROJECT_QUERYEXECUTOR_IMPLS_SQLSERVERQUERYEXECUTOR).execute("query");
+            return queryExecutorMap.get(QueryExecutorType.ELASTIC).execute("query");
         } catch (NullPointerException e) {
             return queryExecutor.execute("query");
         }
