@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62ca48d-7fbc-43c7-906d-298f60286757" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/IQueryExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/QueryExecutorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ElasticQueryExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/HiveQueryExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/ImpalaQueryExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/project/queryExecutor/impls/SqlServerQueryExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/IRepositoryFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/repos/Repository1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/repositories/repos/Repository2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/IServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/implementations/Service1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/project/services/implementations/Service2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framework/ConfigurationBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="Enum" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -47,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.project.old" />
       <recent name="com.example.project.repositories.repos" />
     </key>
   </component>
@@ -56,7 +75,7 @@
       <module name="spring-boot-configuration-bean-injection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.project.*" />
+          <option name="PATTERN" value="com.example.project.old.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +107,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="178" key="#Application/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584044414674" />
+    <state x="552" y="178" key="#Plugins" timestamp="1584542237232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Plugins/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584542237232" />
     <state x="552" y="178" key="#Project_Structure" timestamp="1584037822060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -100,30 +123,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584037927591" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1584042699321">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1584540948326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584042699321" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584540948326" />
+    <state x="782" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584540761019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584540761019" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584096628936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096628936" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584096671232">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584544026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671232" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584096671231">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584544026707" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584544026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671231" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584096671231">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584544026707" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584544026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671231" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584096671232">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584544026707" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584544026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584096671232" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584544026707" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584043828417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -144,5 +171,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="178" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584097503014" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584541967303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584541967303" />
   </component>
 </project>
