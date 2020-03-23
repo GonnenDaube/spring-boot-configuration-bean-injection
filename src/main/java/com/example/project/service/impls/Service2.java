@@ -12,38 +12,5 @@ import java.util.Map;
 
 @Service
 @Profile("prod")
-public class Service2 implements IService {
-
-    @Autowired
-    private Map<String, IQueryExecutor> queryExecutorMap;
-
-    private IQueryExecutor def;
-
-    @PostConstruct
-    public void init() throws Exception {
-        this.def = queryExecutorMap.values().stream()
-                .filter(executor -> executor
-                        .getClass()
-                        .getDeclaredAnnotation(Default.class) != null)
-                .findFirst()
-                .orElseThrow(Exception::new);
-    }
-
-    @Override
-    public String createTable(String type) {
-        try {
-            return queryExecutorMap.get(type).execute("asdasd");
-        } catch (NullPointerException e) {
-            return def.execute("adsasda");
-        }
-    }
-
-    @Override
-    public String deleteTable(String type) {
-        try {
-            return queryExecutorMap.get(type).execute("asdasd");
-        } catch (NullPointerException e) {
-            return def.execute("adsasda");
-        }
-    }
+public class Service2 extends BasicService {
 }

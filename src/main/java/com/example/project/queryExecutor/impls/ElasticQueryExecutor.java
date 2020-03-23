@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
+@Default
 @Profile({"dev"})
 public class ElasticQueryExecutor implements IQueryExecutor {
     @Override
