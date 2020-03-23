@@ -1,29 +1,49 @@
 package com.example.project.service.impls;
 
 import com.example.project.queryExecutor.IQueryExecutor;
-import com.example.project.queryExecutor.QueryExecutorFactory;
-import com.example.project.queryExecutor.QueryExecutorType;
+import com.example.project.queryExecutor.impls.Default;
 import com.example.project.service.IService;
-import framework.EnumQualifier;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+import java.util.Map;
+
 @Service
-@EnumQualifier("SECONDARY")
+@Profile("prod")
 public class Service2 implements IService {
 
     @Autowired
-    @Qualifier(QueryExecutorFactory.CONF)
-    private IQueryExecutor queryExecutor;
+    private Map<String, IQueryExecutor> queryExecutorMap;
+
+    private IQueryExecutor def;
+
+    @PostConstruct
+    public void init() throws Exception {
+        this.def = queryExecutorMap.values().stream()
+                .filter(executor -> executor
+                        .getClass()
+                        .getDeclaredAnnotation(Default.class) != null)
+                .findFirst()
+                .orElseThrow(Exception::new);
+    }
 
     @Override
     public String createTable(String type) {
-        return queryExecutor.execute("create");
+        try {
+            return queryExecutorMap.get(type).execute("asdasd");
+        } catch (NullPointerException e) {
+            return def.execute("adsasda");
+        }
     }
 
     @Override
     public String deleteTable(String type) {
-        return queryExecutor.execute("delete");
+        try {
+            return queryExecutorMap.get(type).execute("asdasd");
+        } catch (NullPointerException e) {
+            return def.execute("adsasda");
+        }
     }
 }

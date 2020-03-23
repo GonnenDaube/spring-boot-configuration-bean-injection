@@ -1,22 +1,21 @@
 package com.example.project;
 
-import com.example.project.queryExecutor.IQueryExecutor;
-import com.example.project.queryExecutor.QueryExecutorFactory;
-import com.example.project.queryExecutor.QueryExecutorType;
 import com.example.project.service.IService;
-import com.example.project.service.ServiceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import javax.annotation.PostConstruct;
 
 @RestController
 @RequestMapping("/")
 public class MainController {
     @Autowired
-    @Qualifier(ServiceFactory.CONF)
     private IService service;
+
+    @PostConstruct
+    public void init() {
+
+    }
 
     @GetMapping("/create/{type}")
     public String create(@PathVariable String type) {

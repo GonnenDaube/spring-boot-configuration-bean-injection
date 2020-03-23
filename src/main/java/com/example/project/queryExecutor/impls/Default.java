@@ -1,12 +1,11 @@
-package framework;
+package com.example.project.queryExecutor.impls;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EnumQualifier {
-    String value();
+@Target(ElementType.TYPE)
+public @interface Default {
 }
